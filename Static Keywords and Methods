@@ -1,0 +1,35 @@
+public class MyClass{
+	
+		public static void main(String s[])
+		{
+		
+			resume r = new resume();
+			r.PrintResume();
+			r.employeeDetails();
+		} 
+}
+
+class resume{
+	
+	static String name;
+	int age;
+	static String college = "Harvard"; 
+	
+	resume(){
+		
+		name = "Arvind";
+		age = 45;
+	}
+	
+	void PrintResume(){
+		
+		System.out.println(name + ", " + age +", has studied at " + college);
+		
+	}
+	static void employeeDetails(){
+		
+		System.out.println(name + " has studied Engineering at " + college);
+		
+	}
+	
+}
